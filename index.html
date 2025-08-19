@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Travel Club</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Qwitcher+Grypen:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <nav class="navbar navbar-expand-lg bg-body-transparent position-absolute top-0 w-100">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#"><span id="log">Travel</span>Guide</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul  class="navbar-nav ms-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">Home</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Packages
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Action</a></li>
+            <li><a class="dropdown-item" href="#">Another action</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#">Something else here</a></li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">Transport</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">Hotels</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">Blogs</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">Support</a>
+        </li>
+      </ul>
+      
+    </div>
+  </div>
+</nav>
+
+<!-- HERO SECTION -->
+<section class="hero text-white text-center d-flex align-items-center justify-content-center" style="background-image: url('./images/homenew.jpg'); background-size: cover; height: 100vh;">
+  <div>
+    <h1 class="display-4 fw-bold ">Travel <br> <span class="fst-italic sa">far enough</span>,<br>You meet <br><span class="fst-italic sa">yourself</span></h1>
+    <!-- Button trigger modal -->
+<button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+ ENQUIRY
+</button>
+
+<!-- Modal -->
+<div class="modal fade " id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5 text-black " id="staticBackdropLabel">PLEASE SHARE YOUR DETAILS</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body px-0">
+        <div class="mb-2"><input type="text" class="cust" placeholder="Name"> <br></div>
+        <div class="mb-2"><input type="text" class="cust" placeholder="Email"> <br></div>
+        <div class="mb-2"><input type="text" class="cust" placeholder="Message"></div>
+      </div>
+      
+      <div class="modal-footer d-flex justify-content-center">
+        <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Submit</button>
+      </div>
+    </div>
+  </div>
+</div>
+  </div>
+</section>
+
+<!-- HONEYMOON PACKAGES -->
+<section id="packages" class="py-5 text-center">
+  <div class="container">
+    <h2 class="mb-4 fw-bold">Honeymoon Packages</h2>
+    <div class="row">
+      <!-- Repeat for each card -->
+      <div class="col-md-3">
+        <div class="card" style="height: 25rem;">
+          <img src="./images/keralacov.jpg" class="w-100 h-75 card-img-top" alt="Kerala Honeymoon">
+          <div class="card-body">
+            <h5 class="card-title">Kerala Honeymoon</h5>
+            <p class="card-text text-danger">5 Days | ₹29,999</p>
+            <p class="small">Includes boat house, backwater cruise and more.</p>
+            <a href="#" class="btn btn-primary">BOOK NOW</a>
+          </div>
+        </div>
+      </div>
+       <div class="col-md-3">
+        <div class="card" style="height: 25rem;">
+          <img src="./images/Maldives.jpg" class="w-100 h-75 card-img-top" alt="Kerala Honeymoon">
+          <div class="card-body">
+            <h5 class="card-title">Maldives Honeymoon</h5>
+            <p class="card-text text-danger">5 Days | ₹29,999</p>
+            <p class="small">Includes boat house, backwater cruise and more.</p>
+            <a href="#" class="btn btn-primary">BOOK NOW</a>
+          </div>
+        </div>
+      </div>
+       <div class="col-md-3">
+        <div class="card" style="height: 25rem;">
+          <img src="./images/manali.png" class="w-100 h-75 card-img-top" alt="Kerala Honeymoon">
+          <div class="card-body">
+            <h5 class="card-title">Manali Honeymoon</h5>
+            <p class="card-text text-danger">5 Days | ₹29,999</p>
+            <p class="small">Includes boat house, backwater cruise and more.</p>
+            <a href="#" class="btn btn-primary">BOOK NOW</a>
+          </div>
+        </div>
+      </div>
+       <div class="col-md-3">
+        <div class="card" style="height: 25rem;">
+          <img src="./images/goa.webp" class="w-100 h-75 card-img-top" alt="Kerala Honeymoon">
+          <div class="card-body">
+            <h5 class="card-title">Goa Honeymoon</h5>
+            <p class="card-text text-danger">5 Days | ₹29,999</p>
+            <p class="small">Includes boat house, backwater cruise and more.</p>
+            <a href="#" class="btn btn-primary">BOOK NOW</a>
+          </div>
+        </div>
+      </div>
+      <!-- Copy and customize 3 more cards: Maldives, Manali, Goa -->
+    </div>
+    <button id="more" class="btn btn-primary rounded mt-3">MORE PACKAGES</button>
+  </div>
+</section>
+
+<!-- SPECIAL KERALA FESTIVAL TOURS -->
+<section class="bg-light py-5 text-center">
+  <div class="container">
+    <h2 class="mb-4 fw-bold">Special Kerala Festival Tours</h2>
+    <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active" data-bs-interval="10000">
+          <img src="./images/thrissurpooram.webp" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item" data-bs-interval="2000">
+          <img src="./images/vallam.jpg" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img  id="trail" src="./images/trail.jpg" class="d-block w-100" alt="...">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+    <br>
+    <div class="row">
+      <!-- Add more Kerala festival images here -->
+       <div class="col-6">
+        <iframe class="ratio ratio-16x9 mb-3" width="100%" height="292" src="https://www.youtube.com/embed/R83BlU5nnbs?list=RDR83BlU5nnbs" title="Signature Video  | Kerala Tourism | Experience God’s Own Country" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+       </div>
+       <div class="col-6">
+        <img src="./images/festivalscollage.jpg" class="w-100  img-fluid mb-3" alt="Boat Race" />
+       </div>
+    </div>
+  </div>
+</section>
+
+<!-- NORTH INDIAN TOURS -->
+<section class="py-5 text-center">
+  <div class="container">
+    <h2 class="mb-4 fw-bold">North Indian Tours</h2>
+    <div class="row">
+      <div class="ts col-md-3 mb-3">
+        <img src="./images/varanasi.jpg" class="nor img-fluid rounded h-75 w-100" alt="Varanasi" />
+        <div class="north rounded">
+          <p class="notext">Varanasi</p>
+          <p>12000/per person</p>
+          <button class="btn btn-primary">Book Now</button>
+        </div>
+      </div>
+      <div class="ts col-md-3 mb-3">
+        <img src="./images/meghalaya.jpg" class="nor img-fluid rounded h-75 w-100" alt="meghalaya" />
+        <div class="north rounded">
+          <p class="notext">Meghalaya</p>
+          <p>10000/per person</p>
+          <button class="btn btn-primary">Book Now</button>
+        </div>
+      </div>
+      <div class="ts col-md-3 mb-3">
+        <img src="./images/golden.jpg" class="nor img-fluid rounded h-75 w-100" alt="golden" />
+        <div class="north rounded">
+          <p class="notext">Golden Temple</p>
+          <p>12000/per person</p>
+          <button class="btn btn-primary">Book Now</button>
+        </div>
+      </div>
+      <div class="ts col-md-3 mb-3">
+        <img src="./images/rajasthan.jpg" class="nor img-fluid rounded h-75 w-100" alt="rajasthan" />
+        <div class="north rounded">
+          <p class="notext">Rajasthan</p>
+          <p>13000/per person</p>
+          <button class="btn btn-primary">Book Now</button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+</section>
+
+<!-- PREMIUM FEATURES -->
+<section class="bg-light py-5 text-center">
+  <div class="container ">
+    <h2 class="mb-4 fw-bold">Our Premium Features</h2>
+    <p id="fea">we will make your dream come true</p><br>
+    <div class="row">
+      <div class="col-md-3 feature-box p-1">
+        <img class="rounded-circle w-25" src="./images/bike.avif" width="50" />
+        <h6>FREE BIKE RIDE</h6>
+        <p><a href="#">Learn More</a></p>
+      </div>
+      <div class="col-md-3 feature-box p-1">
+        <img class="rounded-circle w-25" src="./images/cam.avif" width="50" />
+        <h6>CAMPFIRE</h6>
+        <p><a href="#">Learn More</a></p>
+      </div>
+      <div class="col-md-3 feature-box p-1" >
+        <img class="rounded-circle w-25" src="./images/support.avif" width="50" />
+        <h6>24x7 SUPPORT</h6>
+        <p><a href="#">Learn More</a></p>
+      </div>
+      <div class="col-md-3 feature-box p-1">
+        <img class="rounded-circle w-25" src="./images/tourguide.jpg" width="50" />
+        <h6>TOUR GUIDE</h6>
+        <p><a href="#">Learn More</a></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section class="py-5 text-center">
+  <div class="container">
+    <i class="fa-regular fa-envelope-open enve"></i>
+    <h2 class="mb-4 lo fw-bolder">Our Customers love</h2>
+    <div class="row">
+      <div class="col-md-4">
+        <img src="./images/couple1.jpg" class="mb-2 w-50" width="80" />
+        <div class="star-rating text-warning">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="far fa-star"></i>
+          <i class="far fa-star"></i> <!-- outlined star = empty -->
+        </div>
+        <p><strong>Michael & Jenny</strong><br><small>Kerala Honeymoon</small></p>
+        <p>"An unforgettable experience."</p>
+      </div>
+      <div class="col-md-4">
+        <img src="./images/couple2.jpg" class="mb-2 w-50" width="80" />
+        <div class="star-rating text-warning">
+  <i class="fas fa-star"></i>
+  <i class="fas fa-star"></i>
+  <i class="fas fa-star"></i>
+  <i class="fas fa-star"></i>
+  <i class="fa-solid fa-star-half-stroke"></i>
+</div>
+        <p><strong>Rohith & Anusha</strong><br><small>Manali Adventure</small></p>
+        <p>"Loved every moment!"</p>
+      </div>
+      <div class="col-md-4">
+        <img src="./images/couple3.jpg" class="mb-2 w-50" width="80" />
+        <div class="star-rating text-warning">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="far fa-star"></i> <!-- outlined star = empty -->
+        </div>
+        <p><strong>James & Anna</strong><br><small>Goa Beach</small></p>
+        <p>"Great planning and service."</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="bg-dark text-white text-center py-4">
+  <div class="container">
+    <div class="row mb-3">
+      <div class="col-md-4">
+        <h6>ABOUT US</h6>
+        <p>Our Company<br>Our Management<br>Connections<br>Annual Reports<br>Our Network</p>
+      </div>
+      <div class="col-md-4">
+        <h6>SOCIAL MEDIA</h6>
+        <p>
+          <div class="iconCollection">
+            <div class="icon">
+                <a href="" target="_blank"><i class="fa-brands fa-twitter brands"></i></a>
+            </div>
+            <div class="icon">
+              <a href="" target="_blank"><i class="fa-brands fa-facebook-f brands"></i></a>
+            </div>
+            <div class="icon">
+              <a href="" target="_blank"><i class="fa-brands fa-whatsapp brands"></i></a>
+            </div>
+            <div class="icon">
+              <a href="" target="_blank"><i class="fa-brands fa-instagram brands"></i></a>
+            </div>   
+          </div>
+        </p>
+      </div>
+      <div class="col-md-4">
+        <img class="w-50" src="./images/foot-removebg-preview.png" />
+      </div>
+    </div>
+    <p class="mb-0">© Travel Guide 2025. Designed by Amrutha.</p>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
